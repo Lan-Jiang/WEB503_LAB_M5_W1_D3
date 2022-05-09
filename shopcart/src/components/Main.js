@@ -7,7 +7,7 @@ export default function Main(props) {
     <main className="block-main">
       <div>
         {products.map((product) => (
-          <Product key={product.id} product={product}></Product>
+          <Product key={product.id} product={product} ></Product>
         ))}
       </div>
     </main>

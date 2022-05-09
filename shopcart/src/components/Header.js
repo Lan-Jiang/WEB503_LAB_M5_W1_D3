@@ -1,4 +1,7 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header(props) {
   return (
@@ -9,8 +12,8 @@ export default function Header(props) {
         </a>
       </div>
       <div>
-        <img src="./public/products/logo192.png"></img>
-        <a href="#/cart">items</a>
+        <FontAwesomeIcon icon={faShoppingCart} />
+        <span>{this.props.sum}</span><a href="#/cart">items</a>
       </div>
     </header>
   );

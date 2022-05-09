@@ -31,6 +31,14 @@ function App() {
   //     );
   //   }
   // };
+  /* Update quantity */
+  const recalculateCart = (quantity, id) => {
+    let products = this.state.products
+    products.filter(item => item.id === id)[0].value = quantity
+    this.setState({ products })
+    console.log()
+  }
+
   return (
     <div className="App">
       <div className='block'><Header></Header></div>
@@ -43,3 +51,6 @@ function App() {
 }
 
 export default App;
+
+//updateQuantity
+//quantityTotalCalculation
