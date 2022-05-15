@@ -84,3 +84,16 @@ button.badge {
   color: #ffffff;
   width: 1.5rem;
 }
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  border: 1em;
+  border-color: #404040;
+}
+
+ul li input {
+  width: 50px;
+}
